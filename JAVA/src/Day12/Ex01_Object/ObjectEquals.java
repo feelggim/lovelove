@@ -2,8 +2,7 @@ package Day12.Ex01_Object;
 
 
 public Student(int i, String string) {
-	// TODO Auto-generated constructor stub
-}
+
 /**
  * Object 클래스 의equals () 메소드 활용
  */
@@ -99,5 +98,5 @@ public class ObjectEquals {
 	}
 
 }
-
+}
 
