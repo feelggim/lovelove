@@ -12,38 +12,31 @@ public class Ex03_ElseIf {
 		// 60점이상, D
 		// 60점미만, F
 		Scanner sc = new Scanner(System.in);
-		System.out.print("성적 : ");
 		int score = sc.nextInt();
-		char grade = 'F';
 		
 		// 조건을 만족할 때, 실행할 실행문이 1문장이면 {} 생략가능
-		if( score >= 90 && score <= 100 )	grade = 'A'; 
-		if( score >= 80 && score < 90 )		grade = 'B';
-		if( score >= 70 && score < 80 )		grade = 'C';
-		if( score >= 60 && score < 70 )		grade = 'D';
-		if( score < 60 && score >= 0 )		grade = 'F';
-		System.out.println("학점 : " + grade);
+		char grade = 'A';
+		if (90 <= score && score <= 100)	grade = 'A';
+		if (80 <= score && score < 90) 		grade = 'B';
+		if (70 <= score && score < 80) 		grade = 'C';
+		if (60 <= score && score < 70)		grade = 'D';          
+		if (60 > score && score >= 0)		grade = 'F';
+			System.out.println("학점 : " + grade);
 		
 		// if~else if~else
-		if( score >= 90 && score <= 100 ) 
+		if (90 <= score && score <= 100) {
 			grade = 'A';
-		else if( score >= 80 )
+		}else if(80 <= score) {
 			grade = 'B';
-		else if( score >= 70 )
+		}else if (70 <= score) {
 			grade = 'C';
-		else if( score >= 60 )
+		}else if (60 <= score) {
 			grade = 'D';
-		else 
+		}else {
 			grade = 'F';
-		System.out.println("학점 : " + grade);
-		sc.close();
+		}System.out.println("학점 : " + grade);
+		sc.close();	
 	}
-
+		
 }
-
-
-
-
-
-
 

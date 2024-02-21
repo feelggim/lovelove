@@ -1,17 +1,17 @@
 package Day02;
 
 public class Ex11_PlusMinusOperator {
-	
+
 	public static void main(String[] args) {
 		int a = 10;
 		int b = 20;
 		int c;
 		
-		// 증감연산자
-		// ++a, a++		: a 를 1 증가
-		// --a, a-- 	: a 를 1 감소
+		//증감연산자
+		// ++a, a++ 	: a 를 1 증가
+		// --a, a--		: a 를 1 감소
 		
-		// 전위 연산자		: 연산자 우선순위가 가장 높다
+		// 전위 연산자		: 연산자 우선순위가 가장 높다.
 		c = ++a + b;
 		System.out.println("c = " + c);
 		System.out.println("a = " + a);
@@ -20,10 +20,10 @@ public class Ex11_PlusMinusOperator {
 		int y = 20;
 		int z;
 		
-		// 후위 연산자 	: 연산자 우선순위가 가장 낮다
+		// 후위 연산자 		: 연산자 우선순위가 가장 낮다.
 		z = x++ + y;
 		System.out.println("z = " + z);
 		System.out.println("x = " + x);
+		
 	}
-
 }

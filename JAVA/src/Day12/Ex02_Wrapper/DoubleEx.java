@@ -9,7 +9,7 @@ public class DoubleEx {
 		Double d = 3.14;
 		System.out.println( d.toString() + 0.06 );					// 실수형 -> 문자열
 		System.out.println( Double.parseDouble("3.14") + 0.06 );	// 문자열 -> 실수형
-
+		
 	}
-
+	
 }

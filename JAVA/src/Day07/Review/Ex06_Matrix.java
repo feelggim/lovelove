@@ -16,48 +16,42 @@ public class Ex06_Matrix {
 		// (출력 예시)
 		// 1 2 3
 		// 4 5 6
-
 		Scanner sc = new Scanner(System.in);
-		System.out.println("M :");
+		System.out.println("M : ");
 		int M = sc.nextInt();
 		System.out.println("N : ");
 		int N = sc.nextInt();
-		// M행 N열의 2차원 배열 선언 및 생성
-		int arr[][] = new int[M][N];
-
+		
+		int[][] arr = new int[M][N];
+		
 		// 입력
 		// 2차원 배열은 이중반복문으로 접근한다.
-		// 바깥쪽 반복문 : -반복변수 i : 행 접근
-		// 안쪽 반복문 : -반복변수 j : 열 접근
-		// arr.length : -행 크기
-		// arr[i].length: -열 크기
+		// 바깥 반복문			: - 반복변수 i : 행 접근
+		// 안 반복문			: - 반복변수 j : 열 접근
+		// arr.length		: - 행 크기
+		// arr[i].length	: - 열 크기
+		
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
 				arr[i][j] = sc.nextInt();
 			}
-
 		}
-		// 출력
+		
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
 				System.out.print(arr[i][j] + " ");
 			}
 			System.out.println();
 		}
-		System.out.println("------------------");
-
-		// foreach 으로 2차원 배열 출력
+		System.out.println("----------------------------------------");
+		
+		//foreach 으로 2차원배열 출력
 		for (int[] row : arr) {
 			for (int col : row) {
-
-				System.out.print(col + "  ");
+				System.out.print(col + " ");
 			}
-
 			System.out.println();
-
 		}
 		sc.close();
-
 	}
-
 }

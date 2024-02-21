@@ -1,9 +1,7 @@
 package Day12.Ex03_Lang;
 
-import java.util.Random;
-
 public class MathEx {
-
+	
 	public static void main(String[] args) {
 		System.out.println(Math.PI);			// 3.141592653589793 (원주율)
 		System.out.println(Math.ceil(3.125));	// 올림 : 해당 수보다 큰 정수 중 가장 작은 수
@@ -14,6 +12,7 @@ public class MathEx {
 		System.out.println(Math.round(3.14));	// 반올림
 		
 		System.out.println("---------------");
+		
 		// 로또 번호 6/45
 				// [1,45] 사이의 정수형 난수 6개 만들기
 				// Math.random()					: 0.0 보다 크거나 같고 1.0 보다 작은 임의의 실수
@@ -32,19 +31,27 @@ public class MathEx {
 				}
 				System.out.println();
 				
-				//---------직접 해보기
-				//-50~50 사이의 랜덤 정수 1개를 출력하시오
-			    // 1.Random 객체 생성
-		        Random random = new Random();
-		        // 2.-50에서 50 사이의 랜덤 정수 생성 101에서 -50 빼면 -랑 +값이랑 같이 있을수있음
-		        int randomNumber = random.nextInt(101) - 50;
-		        System.out.println("랜덤 정수: " + randomNumber);
-		    }
-
+				System.out.println("-------------------------------------------");
+				// -50 ~ 50 사이의 랜덤 정수 1개를 출력하시오.
+				// ** 직접 해보기
+				int random1 = (int)(Math.random() * 101 + -50);
+				System.out.println(random1);
 				
-				//아래 정수 중 최댓값을 구하시오.
-				//**Math.max()
-				double [] arr = {90.12,12.45,33.22,64.12,70.45};
+				System.out.println("-------------------------------------------");
+				// 아래 정수 중 최댓값을 구하시오
+				// ** Math.max()
+				
+				double[] arr = {90.12, 12.45, 33.22, 64.12, 70.45};
+				
 				double max = Double.MIN_VALUE;
+				for (int i = 0; i < arr.length; i++) {
+					max = Math.max(max, arr[i]);
+					// if ( max < arr[i] )		// 비교 연산 대신에 max() 사용
+					// max = arr[i]
+				}
+				
+				System.out.println("max(최댓값) : " + max);
+				
+				
 	}
-
+}

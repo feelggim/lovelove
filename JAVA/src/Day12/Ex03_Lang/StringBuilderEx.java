@@ -1,13 +1,15 @@
 package Day12.Ex03_Lang;
 
 public class StringBuilderEx {
-
+	
 	public static void main(String[] args) {
+		
 		StringBuilder sb = new StringBuilder();
-		//StringBuilder
-		//:문자열을 변경 할 수 있는 클래스
-		//*StringBuffer  :  멀티 스레드 환경에서 동기화 가능
-		//*StringBuilder :  멀티 스레드 환경에서 동기화 가능
+		// StringBuilder
+		// : 문자열을 변경 할 수 있는 클래스
+		// * StringBuffer 	: 멀티 스레드 환경에서 동기화 O
+		// * StringBuilder 	: 멀티 스레드 환경에서 동기화 X
+		
 		
 		sb.append("더조은");
 		sb.append("아카데미 ");
