@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<body>
+    <!--전체영역-->
+        <!--로그인영역-->
+    <div class="login-wrapper">
+        <div class="login-logo">
+            <img src="img/logo.png" id="img" alt="로고">
+        </div>
+        <!-- <h2>Login</h2> -->
+        <form method="post" action="서버의url" id="login-form">
+            <!--중첩박스-->
+
+            <input type="text" name="userName" placeholder="Email">
+            <input type="password" name="userPassword" placeholder="Password">
+            <div class="login-rember">
+
+                <label for="remember-check">
+                    <input type="checkbox" id="remember-check">
+                    <span class="checkbox">아이디 저장하기</span>
+                    
+                </label>
+            <div class="login-rember">
+            <label for="remember-check">
+                <input type="checkbox" id="remember-check">
+                <span class="checkbox">비밀번호 저장하기</span>
+            </label> </div>
+
+            <input type="submit" value="LOGIN">
+            <input type="submit" value="JOIN">
+        </form>
+    </div>
+</body>
+    
+    
+</body>
+</html>
